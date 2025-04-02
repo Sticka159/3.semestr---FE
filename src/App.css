@@ -1,38 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1;
+    color: #5c4d2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+    color: #f57f17;
+    margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    color: #5c4d2e;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App.owner {
+    margin-top: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    background-color: #fbc02d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    background-color: #f9a825;
+}
+
+.flip-switch-button {
+    background-color: #fbc02d;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.flip-switch-button:hover {
+    background-color: #f9a825;
+}
+
+.flip-switch-button.active {
+    background-color: #f57f17;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+li {
+    background-color: #fff3e0;
+    border: 1px solid #ffcc80;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    font-size: 16px;
+}
+
+li button {
+    background-color: #fbc02d;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: #f9a825;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffcc80;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.flip-switch-container,
+.add-member-button,
+.member-list,
+.add-item-input,
+.item-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

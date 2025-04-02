@@ -1,0 +1,37 @@
+.flip-switch-button {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.switch-btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #ffd700;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.switch-btn:not(:disabled):hover {
+    background-color: #ffcc00;
+}
+
+.switch-btn:disabled {
+    background-color: #ff9f00;
+    color: white;
+    cursor: not-allowed;
+}
+
+.switch-btn:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.switch-btn:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
